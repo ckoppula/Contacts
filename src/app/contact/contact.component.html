@@ -1,0 +1,30 @@
+<form [formGroup]="myForm" novalidate>
+<div class="head">
+<h3>Contact</h3>
+<button (click)="changeFlag()"><p>X</p></button>
+</div>
+<div class="section">
+    
+    <div>
+      <label>Name: </label>
+      <input type="text" formControlName="name"   required />
+      
+    </div>
+    <div>
+      <label>Sur Name: </label>
+      <input type="text" formControlName="surName" required />
+    </div>
+    <div>
+      <label>Message:</label>
+      <textarea formControlName="message" cols="40" rows="5"></textarea>
+    </div>
+  
+
+</div>
+<div class="section">
+  <!--save(myForm.value, myForm.valid) -->
+    <div>
+      <button  (click)="save(myForm.value, myForm.valid)">Submit</button>
+    </div>
+</div>
+</form>

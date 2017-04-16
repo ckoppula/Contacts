@@ -1,0 +1,13 @@
+.section {
+  border: 1px solid black;
+  font-family: Arial, Helvetica, sans-serif;  
+}
+.head{
+    border: 1px solid black;
+  font-family: Arial, Helvetica, sans-serif;  
+}
+#flagButton{
+  position: relative;
+  left: 500px;
+  top: 150px;
+}

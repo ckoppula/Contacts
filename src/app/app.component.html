@@ -1,0 +1,8 @@
+<h1>
+  {{title}}
+</h1>
+<a href="#" (click)="changeFlag()">Open Contacts Form</a>
+
+<div *ngIf="contactService.contactsFlag" >
+  <app-contact></app-contact>
+</div>
